@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="index-page sidebar-collapse">
+    <div id="header"></div>
+
+  <script src="header.js"></script>
+ 
+ <div class="page-header header-filter clear-filter purple-filter pt-5" data-parallax="true" style="background-image: url('https://images.unsplash.com/photo-1556742111-a301076d9d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand">
+          <h1>ETOKEN SYSTEM</h1>
+          <h3>Dont wait in the queue for your turn generate token online.</h3>
+          <br>
+          <br>
+          <br>
+          <div class="mt-sm-10">
+            <a href="./login.html"><button data-toggle="modal" data-target="#loginModal" class="btn btn-default  btn-lg">&nbsp;&nbsp;User Login &nbsp;</button></a>
+          <a href="./companyregistration.html">  <button class="btn btn-default  btn-lg">Company Login</button></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        
+ 
+ 
+           <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      //init DateTimePickers
+      materialKit.initFormExtendedDatetimepickers();
+
+      // Sliders Init
+      materialKit.initSliders();
+    });
+
+
+    function scrollToDownload() {
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+
+  </script>
+</body>
+
+</html>
