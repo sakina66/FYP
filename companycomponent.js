@@ -9,7 +9,7 @@ compsearch = () =>{
         <div class="team-player">
           <div class="card card-plain">
             <div class="col-md-10 ml-auto mr-auto">
-              <img src="../assets/img/faces/hbl.jpg" alt="Thumbnail Image" class="img-raised rounded-image img-fluid">
+              <img src="./assets/img/faces/hbl.jpg" alt="Thumbnail Image" class="img-raised rounded-image img-fluid">
             </div>
             <h4 class="card-title">HBL
               <br>
