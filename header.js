@@ -4,7 +4,7 @@ header.innerHTML = `
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-translate">
-        <a class="navbar-brand" href="./index.html">EToken</a>
+        <a class="navbar-brand" href="./index.html">e-Token</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -42,12 +42,12 @@ header.innerHTML = `
           <li class="dropdown nav-item">
             <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
               <div class="profile-photo-small">
-                <img src="./assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
+                <img src="./assets/img/faces/marc.jpg" alt="Circle Image" class="rounded-circle img-fluid">
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
              
-              <a href="#pablo" class="dropdown-item">Maqsood Ahmed</a>
+              <a href="#pablo" class="dropdown-item">Richard james</a>
               <a href="#pablo" class="dropdown-item">Profile Setting</a>
               <a href="#pablo" class="dropdown-item">Sign out</a>
             </div>
