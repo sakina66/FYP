@@ -49,7 +49,7 @@ header.innerHTML = `
              
               <a href="#pablo" class="dropdown-item">Richard james</a>
               <a href="#pablo" class="dropdown-item">Profile Setting</a>
-              <a href="#pablo" class="dropdown-item">Sign out</a>
+              <a href="#pablo"  onclick="logout()" class="dropdown-item">Sign out</a>
             </div>
           </li>
         </ul>

@@ -47,7 +47,7 @@
                           <i class="material-icons">perm_identity</i>
                         </span>
                       </div>
-                      <input type="email" class="form-control" placeholder="Name...">
+                      <input type="email" id="usname" class="form-control" placeholder="Name...">
                     </div>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -55,7 +55,7 @@
                             <i class="material-icons">phone</i>
                           </span>
                         </div>
-                        <input type="email" class="form-control" placeholder="Contact number...">
+                        <input type="number" id="usnumber" class="form-control" placeholder="Contact number...">
                       </div>
                 
                 
@@ -65,7 +65,7 @@
                       <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input type="email" class="form-control" placeholder="Email...">
+                  <input type="email" id="usemail"  class="form-control" placeholder="Email...">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -73,7 +73,7 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" placeholder="Password...">
+                  <input type="password" id="uspass" class="form-control" placeholder="Password...">
                 </div>
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -81,13 +81,14 @@
                         <i class="material-icons">lock_outline</i>
                       </span>
                     </div>
-                    <input type="password" class="form-control" placeholder="Confirm Password...">
+                    <input type="password" id="usconfirm" class="form-control" placeholder="Confirm Password...">
                   </div>
               </div>
-              <div class="footer text-center">
-                <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Signup</a>
-              </div>
+              
             </form>
+            <div class="footer text-center">
+              <a href="#pablo" onclick="register()" class="btn btn-primary btn-link btn-wd btn-lg">Signup</a>
+            </div>
           </div>
         </div>
       </div>
@@ -129,6 +130,19 @@
      }
  
    </script>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+
+<script src="./firebase/configuration.js"></script>
+<script src="./firebase/signup.js"></script>
+<script src="./firebase/helper.js"></script>
+<script src="./firebase/signout.js"></script>
+
  </body>
  
  </html>
