@@ -18,3 +18,36 @@ async function login(){
         console.log(e.message)
     }
 }
+
+
+async function loginwithgmail(){
+    try{
+    var provider = await new firebase.auth.GoogleAuthProvider();
+    var result = await firebase
+        .auth()
+        .signInWithPopup(provider)
+    var user = result.user;
+      var name = result.user.displayName;
+      var email = result.user.email;
+      var id = result.user.uid;
+      var avatarname = document.getElementById('avatarname');
+     var dbresp = await firebase
+      .firestore()
+      .collection('userdetail')
+      .doc(id)
+      .set({  
+          usname:name,
+          usemail:email
+      });
+      localStorage.setItem('currentuser',id);
+      avatarname.innerHTML = 'maqsood'
+      console.log(avatarname)
+      location.assign("/companies.html");
+       
+}
+    catch(e)
+    {
+        location.assign("/login.html");
+        console.log(e.message)
+    }
+}

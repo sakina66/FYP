@@ -16,12 +16,11 @@ async function register(){
     var resp = await firebase
     .firestore()
     .collection('userdetail')
-    .add({
-        id:uid,
+    .doc(uid)
+    .set({  
         usname:name,
         usemail:eml,
         usnumber:number
-
     });
     alert("user registered");
     location.assign("/login.html");

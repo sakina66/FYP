@@ -47,7 +47,7 @@ header.innerHTML = `
             </a>
             <div class="dropdown-menu dropdown-menu-right">
              
-              <a href="#pablo" class="dropdown-item">Richard james</a>
+              <a href="#pablo" id='avatarname' class="dropdown-item">Richard james</a>
               <a href="#pablo" class="dropdown-item">Profile Setting</a>
               <a href="#pablo"  onclick="logout()" class="dropdown-item">Sign out</a>
             </div>
