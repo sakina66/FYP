@@ -20,6 +20,24 @@ async function login(){
 }
 
 
+async function companylogin(){
+    var em = email.value;
+    var pass = password.value;
+    try{
+    var response = await signinwithfirebase(em, pass)
+    var uid = response.user.uid;
+    localStorage.setItem('currentuser',uid);
+    // location.assign("/companies.html");
+    alert('loginsuccess')
+
+}
+    catch(e)
+    {
+        console.log(e.message)
+    }
+}
+
+
 async function loginwithgmail(){
     try{
     var provider = await new firebase.auth.GoogleAuthProvider();
@@ -30,7 +48,6 @@ async function loginwithgmail(){
       var name = result.user.displayName;
       var email = result.user.email;
       var id = result.user.uid;
-      var avatarname = document.getElementById('avatarname');
      var dbresp = await firebase
       .firestore()
       .collection('userdetail')
@@ -40,8 +57,7 @@ async function loginwithgmail(){
           usemail:email
       });
       localStorage.setItem('currentuser',id);
-      avatarname.innerHTML = 'maqsood'
-      console.log(avatarname)
+    
       location.assign("/companies.html");
        
 }
