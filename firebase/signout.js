@@ -2,7 +2,7 @@ async function logout() {
     try{
         // var response = await firebase.auth().signOut();
         localStorage.removeItem('currentuser')
-        location.assign('/login.html')
+        location.assign('/index.html')
     }
     catch(e)
     {

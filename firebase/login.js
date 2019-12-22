@@ -27,8 +27,8 @@ async function companylogin(){
     var response = await signinwithfirebase(em, pass)
     var uid = response.user.uid;
     localStorage.setItem('currentuser',uid);
-    // location.assign("/companies.html");
-    alert('loginsuccess')
+     location.assign("/admin/dashboard.html");
+  
 
 }
     catch(e)

@@ -224,9 +224,10 @@ try {
     .doc(e)
     .get()
 
-    console.log(tokenresp.data().currenttoken)
-
+    // window.alert('your token no is ',)
+console.log(tokenresp.data().currenttoken)
 var token_no = tokenresp.data().currenttoken;
+window.alert(`your token no will be${token_no}` )
 
 
 
