@@ -34,11 +34,19 @@
              </a>
            </li>
            <li class="nav-item  ">
-            <a class="nav-link" href="./tokens.html">
+            <a class="nav-link" href="./service.html">
               <i class="material-icons">Tokens</i>
-              <p>Tokens</p>
+              <p>Add Services</p>
             </a>
           </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./branch.html">
+              <i class="material-icons">Tokens</i>
+              <p>Add Branch</p>
+            </a>
+          </li>
+        
+          
          </ul>
        </div>
      </div>
@@ -47,7 +55,7 @@
        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
          <div class="container-fluid">
            <div class="navbar-wrapper">
-             <a class="navbar-brand" href="#pablo">Dashboard</a>
+             <a class="navbar-brand" href="#pablo"></a>
            </div>
            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
              <span class="sr-only">Toggle navigation</span>
@@ -77,93 +85,55 @@
          </div>
        </nav>
        <!-- End Navbar -->
-       <div class="content" id="dshboard">
-
-        <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-header-primary">
-                <h4 class="card-title">Add Company</h4>
-                <p class="card-category">Complete your Company profile</p>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">Company </label>
-                        <input type="text" id="company-name" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">Username</label>
-                        <input type="text" id="user-name" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">Company Email address</label>
-                        <input type="email" id="company-email" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">City</label>
-                        <input type="text" id="company-city" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">Branch name</label>
-                        <input type="text" id="company-branch" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">Adress</label>
-                        <input type="text" id="company-address" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                   
-                   
-                    <div class="col">
-                      <div class="form-group bmd-form-group">
-                        <label class="bmd-label-floating">Postal Code</label>
-                        <input type="text" id="company-postal" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                        <div class="form-group bmd-form-group">
-                            <label class="bmd-label-floating">Tokens per/day</label>
-                            <input id="company-tokens" type="text" class="form-control">
-                          </div>
-                        </div>
-                    
-                         
-
-                         
-                        
-                    </div>
-                    <input type="file" id="company-image"  placeholder="Choose image" class="form-control mb-2" />
-
-                  </div>
-                  <div class="clearfix"></div>
-                </form>
-                  <button onclick="addcompany()" class="btn btn-primary pull-right">Update Company</button>
-              </div>
-            </div>
-          </div>
-       </div>
-      </div>
-   </div>
+      
+<div class="row flex-row">
+  <div class="col-md-6 d-flex align-items-stretch grid-margin">
+  <div class="col-12">
+  <div class="card">
+  <div class="card-body">
+  <h4 class="card-title">Branch Setup</h4>
+  <hr class="style1" style="	border-top: 1px solid blueviolet">
+  <form class="forms-sample">
+  <div class="form-group">
+  <label for="exampleInputEmail1">Branch id</label>
+  <input type="text" class="form-control" id="txtbranchid" placeholder="1" disabled >
+  </div>
+  <div class="form-group">
+  <label for="exampleInputPassword1">Branch Description</label>
+  <input type="text" class="form-control"   id="txtbranchdesc" > <span id="alrt" style="color:red;font-size:15px"> <span>   
+  </div>
+  <button type="button" onclick="add()"   class="btn btn-success mr-2">ADD</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>      <!-- co ends -->
+  </div>      <!-- row ends -->
+  
+  <div class="row" style="padding: 0; margin: 0;">
+  <div class="col-lg-12 grid-margin stretch-card">
+  <div class="card">
+  <div class="card-body">
+  <table  id="grdservice" class="table" style="width: 60%; border: 1px solid gray ; border-collapse: collapse;">
+  <thead>
+  <tr>
+  <th style="width: 60%; border: 1px solid gray ; border-collapse: collapse"> Branch id</th >
+  <th style="width: 60%; border: 1px solid gray ; border-collapse: collapse">branch Description</th>
+  <th style="width: 60%; border: 1px solid gray ; border-collapse: collapse">isactive</th>
+  <th style="width: 60%; border: 1px solid gray ; border-collapse: collapse">Options</th>
+  </tr>
+  </thead>
+  <tbody id="grdrow">
+  
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+  
+  
+  </div> 
+  
    <!--   Core JS Files   -->
    <script src="./assets/js/core/jquery.min.js"></script>
    <script src="./assets/js/core/popper.min.js"></script>
@@ -402,7 +372,7 @@
  <script src="../firebase/login.js"></script>
  <script src="../firebase/companies.js"></script>
  <script src="../firebase/functions.js"></script>
- 
+ <script src="branch.js"></script>
  
  </html>
  
